@@ -4,7 +4,7 @@
  nums = [0, 1, 2, 2, 3, 0, 4, 2];
  val = 3
 
- function removeElement () {
+ function removeElement (nums, val) {
     let index = 0
        for(let i=0; i<nums.length; i++){
         if (nums[i] !== val){
@@ -13,5 +13,6 @@
         }
        }
        return index
+   // return nums.filter((a) => a !== val);
  }
 console.log(removeElement(nums,val));
